@@ -59,7 +59,7 @@ public class ArabicUtils implements java.io.Serializable
 
     public static final Pattern emailRegex = Pattern.compile("[a-zA-Z0-9\\-\\._]+@[a-zA-Z0-9\\-_]+\\.[a-zA-Z0-9\\-_]+");
     public static final Pattern dateRegex = Pattern.compile("[0-9]+[\\-/][0-9]+([\\-/][0-9]+)*");
-    public static final Pattern timeRegex = Pattern.compile("[0-9][0-9]:[0-9][0-9](:[0-9][0-9](.[0-9]+)*)*");
+    public static final Pattern timeRegex = Pattern.compile("[0-9][0-9][:،][0-9][0-9]([:،][0-9][0-9](.[0-9]+)*)*");
     public static final Pattern pAllDiacritics = Pattern.compile("[\u0640\u064b\u064c\u064d\u064e\u064f\u0650\u0651\u0652\u0670]");
     public static final Pattern pAllNonCharacters = Pattern.compile("[\u0020\u2000-\u200F\u2028-\u202F\u205F-\u206F\uFEFF]+");
     public static final Pattern pAllDelimiters = Pattern.compile("[" + ALLDelimiters + "]+");
